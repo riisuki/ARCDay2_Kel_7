@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main">
+	<form name="calc">
+		<input id="display" type="text" name="textview" class="textview" disabled  >
+
+	<table>
+		<tr> 
+			<td><input id="btn" type="button" value="cos" OnClick="calc.display.value+='Math.cos('"></td>
+			<td><input id="btn" type="button" value="sin" OnClick="calc.display.value+='Math.sin('"></td> 
+			<td><input id="btn" type="button" value="tan" OnClick="calc.display.value+='Math.tan('"> </td>
+			<td><input id="btn" type="button" value="xⁿ" OnClick="calc.display.value+='**'"></td>
+		</tr>
+		<tr>
+			<td><input id="btn" type="button" value="cos⁻¹" OnClick="calc.display.value+='Math.acos('"></td>
+			<td><input id="btn" type="button" value="sin⁻¹" OnClick="calc.display.value+='Math.asin('"></td>
+			<td><input id="btn" type="button" value="tan⁻¹" OnClick="calc.display.value+='Math.atan('"></td>
+			<td><input id="btn" type="button" value="√" OnClick="calc.display.value+='Math.sqrt('"></td>
+		</tr> 
+		<tr>
+			<td><input type="button" class="button gray symbol inputs" value="( " ></td>
+			<td><input type="button" class="button gray symbol inputs" value=")" ></td>
+			<td><input id="backspace" type="button" class="button gray symbol" value="←" ></td>
+			<td><input type="button" class="button gray symbol operators" value="/" ></td>
+		</tr>
+		<tr>
+			<td><input type="button" class="button gray number inputs" value="7" ></td>
+			<td><input type="button" class="button gray number inputs" value="8" ></td>
+			<td><input type="button" class="button gray number inputs" value="9" ></td>
+			<td><input type="button" class="button gray symbol operators" value="*" ></td>
+		</tr>
+		<tr>
+			<td><input type="button" class="button gray number inputs" value="4" ></td>
+			<td><input type="button" class="button gray number inputs" value="5" ></td>
+			<td><input type="button" class="button gray number inputs" value="6" ></td>
+			<td><input type="button" class="button gray symbol operators" value="-" ></td>
+		</tr>
+		<tr>
+			<td><input type="button" class="button gray number inputs" value="1" ></td>
+			<td><input type="button" class="button gray number inputs" value="2" ></td>
+			<td><input type="button" class="button gray number inputs" value="3" ></td>
+			<td><input type="button" class="button gray symbol operators" value="+" ></td>
+		</tr>
+		<tr>
+			<td><input id="clear" type="button" class="button red symbol" value="C" ></td>
+			<td><input type="button" class="button gray number inputs" value="0" ></td>
+			<td><input type="button" class="button gray symbol inputs" value="." ></td>
+			<td><input id="equal" type="button" class="button gray symbol" value="="></td>
+		</tr>
+
+	</table>
+	</form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
